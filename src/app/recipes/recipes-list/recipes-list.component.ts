@@ -9,7 +9,7 @@ import { Recipe } from '../Recipe.model'
 })
 export class RecipesListComponent implements OnInit {
   recepies: Recipe[] = [
-    new Recipe("Paella","Very yummy", "https://cdn.pixabay.com/photo/2017/06/21/22/42/paella-2428933_960_720.jpg")
+    new Recipe("Paella","Very yummy", "https://upload.wikimedia.org/wikipedia/commons/4/41/Paella_Valenciana%2C_gastronom%C3%ADa_de_Torreblanca.jpg")
   ];
   constructor() { }
 
