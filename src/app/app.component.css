@@ -2,3 +2,8 @@
     display: grid;
     grid-template-rows: 1f, 1fr, 5ff, 1fr;
 }
+
+#content {
+    background: lightgray;
+    padding-bottom: 10px;
+}
