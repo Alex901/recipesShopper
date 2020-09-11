@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {factory} from "../../ConfigLog4j";
+
+const log = factory.getLogger("model.Product");
 
 @Component({
   selector: 'app-root',
@@ -11,5 +14,6 @@ export class AppComponent {
 
   onNavigate(feature: string) {
     this.loadedFeature = feature;
+
   }
 }
