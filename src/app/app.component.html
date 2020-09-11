@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<app-header> </app-header>
+<app-header (fS)="onNavigate($event)"> </app-header>
 <br>
 <br>
 <div class="container" id="content">
-    <app-recipes></app-recipes>
-    <app-shopping-list></app-shopping-list>
+    <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+    <app-shopping-list *ngIf="loadedFeature === 'list'"></app-shopping-list>
 </div>
