@@ -1,25 +1,27 @@
-<nav class="navbar navbar-default col-12">
+<nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
             <a href="#" class="navbar-brand"> Recipe-Shopper </a>
         </div>
 
 
-        <div class="topnav col-12">
-            <a href="#" (click)="onSelect('recipe')">Recepies</a>
-            <a href="#" (click)="onSelect('list')">Shopping list</a>
-        </div>
-        <div class="col-1">
-            <ul class="nav navbar-nav navbar-right col-1">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" role="button">dropdown</a>
+        <div class="topnav row col-12">
+            <div class="col-11">
+                <a href="#" id="topNavLink" (click)="onSelect('recipe')">Recepies</a>
+                <a href="#" id="topNavLink" (click)="onSelect('list')">Shopping list</a>
+            </div>
+            <!-- TODO: Fix this shit later, have to do other stuff now -->
+            <div class="col-1 nav navbar-nav">
+
+                <li class="dropdown" appDropdown>
+                    <a href="#" role="button" class="nav-link"> <span class="material-icons md-light" id="menuIcon">menu</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Save Data </a></li>
-                        <li><a href="#">Fetch Data </a></li>
+                        <li><a class="dropdown-item menu-item" href="#">Save Data </a></li>
+                        <li><a class="dropdown-item menu-item" href="#">Fetch Data </a></li>
                     </ul>
                 </li>
-            </ul>
-        </div>
 
+            </div>
+        </div>
     </div>
 </nav>

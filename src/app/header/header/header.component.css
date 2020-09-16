@@ -1,26 +1,20 @@
 .dropdown-toggle {
     color: orange;
     position: absolute;
-    bottom: -90px;
+}
+
+#menuIcon {
+    color: Orange;
 }
 
 .navbar-header {
     margin: auto;
-    position: relative;
     top: -50px;
+    position: relative;
 }
 
 .navbar-brand {
     color: orange;
-}
-
-.topnav {
-    position: absolute;
-    bottom: 10px;
-}
-
-.navbar-right {
-    bottom: 10px;
 }
 
 .navbar {
@@ -31,19 +25,25 @@
 .topnav {
     background-color: rgb(105, 89, 89);
     overflow: hidden;
+    bottom: 0px;
+    position: absolute;
     margin-left: -30px;
 }
 
 
 /* Style the links inside the navigation bar */
 
-.topnav a {
+#topNavLink {
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+.center {
+    margin: auto;
 }
 
 
@@ -58,6 +58,21 @@
 /* Add a color to the active/current link */
 
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #42c246;
     color: white;
+    text-decoration: underline;
+}
+
+.dropdownMenu {
+    position: inline-block;
+}
+
+.dropdownMenu>a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    padding: 2px 2px;
+    font-size: 14px;
+    overflow: hidden;
 }
