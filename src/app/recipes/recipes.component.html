@@ -2,7 +2,7 @@
     <div class="col-md-5">
         <app-recipes-list></app-recipes-list>
     </div>
-    <div class="col-md-7">
+    <div class="col-md-7" id="right-side">
         <app-recipe-details *ngIf="currentRecipe; else infoText" [recipe]="currentRecipe"></app-recipe-details>
         <ng-template #infoText>
             <p>No recipe selected!</p>
