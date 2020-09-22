@@ -16,7 +16,7 @@
                 <img src="{{ recipe.imagePath }}" alt=" {{ recipe.name }} " class="img-responsive" style="max-height:50px">
             </div>
         </a> -->
-        <app-recipe-item *ngFor="let recipeEl of recepies" [recipe]="recipeEl" (newDescription)="onNewSelection(recipeEl)"> </app-recipe-item>
+        <app-recipe-item *ngFor="let recipeEl of recepies" [recipe]="recipeEl"> </app-recipe-item>
     </div>
 </div>
 <hr>
