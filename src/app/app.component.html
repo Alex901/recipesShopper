@@ -3,6 +3,7 @@
 <br>
 <br>
 <div class="container" id="content">
-    <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
-    <app-shopping-list *ngIf="loadedFeature === 'list'"></app-shopping-list>
+    <router-outlet></router-outlet>
+    <!-- <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+    <app-shopping-list *ngIf="loadedFeature === 'list'"></app-shopping-list> -->
 </div>
